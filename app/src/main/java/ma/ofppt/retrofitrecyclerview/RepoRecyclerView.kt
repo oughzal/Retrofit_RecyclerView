@@ -7,9 +7,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ma.ofppt.retrofitrecyclerview.model.Repo
 
-class RepoRecyclerView : RecyclerView.Adapter<RepoRecyclerView.ViewHolder>() {
+class RepoRecyclerView(items : List<Repo>) : RecyclerView.Adapter<RepoRecyclerView.ViewHolder>() {
 
-    val repoList : List<Repo> = ArrayList()
+    val repoList : List<Repo> = items
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RepoRecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.repo_layout,parent,false)

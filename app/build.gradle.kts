@@ -7,6 +7,10 @@ android {
     namespace = "ma.ofppt.retrofitrecyclerview"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "ma.ofppt.retrofitrecyclerview"
         minSdk = 25
